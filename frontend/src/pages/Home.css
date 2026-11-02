@@ -1,0 +1,509 @@
+/* =========================
+   HOME CONTAINER
+========================= */
+
+.home-container {
+  min-height: calc(100vh - 70px);
+  padding: 50px 7%;
+
+  background: linear-gradient(
+    135deg,
+    #eef2ff,
+    #fdf4ff
+  );
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+  max-width: 1200px;
+  margin: 0 auto 50px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 50px;
+}
+
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.hero-content {
+  flex: 1;
+}
+
+
+/* Welcome Text */
+
+.welcome {
+  display: inline-block;
+
+  padding: 8px 15px;
+
+  margin-bottom: 18px;
+
+  border-radius: 20px;
+
+  background: #ede9fe;
+
+  color: #6d28d9;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+
+/* Main Heading */
+
+.hero-content h1 {
+  font-size: 48px;
+
+  line-height: 1.2;
+
+  color: #312e81;
+
+  margin-bottom: 18px;
+}
+
+
+/* Heading Span */
+
+.hero-content h1 span {
+  color: #7c3aed;
+}
+
+
+/* Description */
+
+.hero-content p {
+  max-width: 600px;
+
+  color: #6b7280;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+
+  margin-bottom: 28px;
+}
+
+
+/* =========================
+   HERO BUTTONS
+========================= */
+
+.hero-buttons {
+  display: flex;
+
+  gap: 15px;
+
+  align-items: center;
+}
+
+
+/* Primary Button */
+
+.primary-btn {
+  padding: 13px 22px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: linear-gradient(
+    135deg,
+    #4f46e5,
+    #7c3aed
+  );
+
+  color: white;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+  box-shadow:
+    0 6px 15px rgba(79, 70, 229, 0.25);
+}
+
+
+.primary-btn:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 10px 22px rgba(79, 70, 229, 0.35);
+}
+
+
+/* Secondary Button */
+
+.secondary-btn {
+  padding: 12px 22px;
+
+  border: 2px solid #7c3aed;
+
+  border-radius: 9px;
+
+  background: white;
+
+  color: #7c3aed;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+
+.secondary-btn:hover {
+  background: #7c3aed;
+
+  color: white;
+
+  transform: translateY(-3px);
+}
+
+
+/* =========================
+   HERO ICON
+========================= */
+
+.hero-icon {
+  width: 300px;
+  height: 300px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  background: linear-gradient(
+    135deg,
+    #4f46e5,
+    #9333ea
+  );
+
+  font-size: 120px;
+
+  box-shadow:
+    0 20px 45px rgba(79, 70, 229, 0.25);
+
+  transition: 0.4s;
+}
+
+
+.hero-icon:hover {
+  transform: translateY(-8px) rotate(2deg);
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.features {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+
+/* =========================
+   FEATURE CARD
+========================= */
+
+.feature-card {
+  padding: 30px 25px;
+
+  background: white;
+
+  border-radius: 18px;
+
+  text-align: center;
+
+  border: 1px solid #e5e7eb;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.06);
+
+  transition: all 0.3s ease;
+}
+
+
+.feature-card:hover {
+  transform: translateY(-7px);
+
+  box-shadow:
+    0 15px 30px rgba(0, 0, 0, 0.10);
+}
+
+
+/* Feature Icon */
+
+.feature-card > div {
+  width: 60px;
+  height: 60px;
+
+  margin: 0 auto 18px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 15px;
+
+  background: #ede9fe;
+
+  font-size: 28px;
+}
+
+
+/* Feature Heading */
+
+.feature-card h3 {
+  color: #312e81;
+
+  font-size: 18px;
+
+  margin-bottom: 10px;
+}
+
+
+/* Feature Description */
+
+.feature-card p {
+  color: #6b7280;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 992px) {
+
+  .home-container {
+    padding: 40px 5%;
+  }
+
+  .hero {
+    gap: 30px;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .hero-icon {
+    width: 240px;
+    height: 240px;
+
+    font-size: 90px;
+  }
+
+  .features {
+    gap: 18px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .home-container {
+    padding: 35px 20px;
+  }
+
+
+  /* Hero becomes vertical */
+
+  .hero {
+    flex-direction: column;
+
+    text-align: center;
+
+    gap: 35px;
+
+    margin-bottom: 40px;
+  }
+
+
+  .hero-content {
+    width: 100%;
+  }
+
+
+  .welcome {
+    font-size: 13px;
+  }
+
+
+  .hero-content h1 {
+    font-size: 34px;
+  }
+
+
+  .hero-content p {
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 15px;
+  }
+
+
+  /* Buttons */
+
+  .hero-buttons {
+    justify-content: center;
+
+    flex-wrap: wrap;
+  }
+
+
+  .hero-icon {
+    width: 220px;
+    height: 220px;
+
+    font-size: 85px;
+  }
+
+
+  /* Features */
+
+  .features {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+  }
+
+
+  .feature-card {
+    padding: 25px 18px;
+  }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+  .home-container {
+    padding: 25px 15px;
+  }
+
+
+  .hero {
+    gap: 28px;
+  }
+
+
+  .welcome {
+    font-size: 12px;
+
+    padding: 7px 12px;
+  }
+
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+
+  .hero-content p {
+    font-size: 14px;
+
+    line-height: 1.6;
+  }
+
+
+  /* Buttons Full Width */
+
+  .hero-buttons {
+    flex-direction: column;
+
+    width: 100%;
+
+    gap: 10px;
+  }
+
+
+  .hero-buttons a {
+    width: 100%;
+  }
+
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+  }
+
+
+  /* Hero Icon */
+
+  .hero-icon {
+    width: 180px;
+    height: 180px;
+
+    font-size: 70px;
+  }
+
+
+  /* Features one by one */
+
+  .features {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+  }
+
+
+  .feature-card {
+    padding: 22px 18px;
+  }
+
+
+  .feature-card h3 {
+    font-size: 17px;
+  }
+
+}

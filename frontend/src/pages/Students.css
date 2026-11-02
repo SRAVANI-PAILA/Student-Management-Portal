@@ -1,0 +1,457 @@
+/* =========================================
+   STUDENTS PAGE
+========================================= */
+
+.students-page {
+  min-height: calc(100vh - 70px);
+
+  padding: 40px 7%;
+
+  background: linear-gradient(
+    135deg,
+    #eef2ff,
+    #fdf4ff
+  );
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.students-header {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 20px;
+
+  margin-bottom: 25px;
+}
+
+.students-header h1 {
+  color: #312e81;
+
+  font-size: 32px;
+
+  margin-bottom: 5px;
+}
+
+.students-header p {
+  color: #6b7280;
+
+  font-size: 15px;
+}
+
+
+/* =========================================
+   ADD BUTTON
+========================================= */
+
+.add-btn {
+  border: none;
+
+  padding: 12px 20px;
+
+  border-radius: 9px;
+
+  background: linear-gradient(
+    135deg,
+    #4f46e5,
+    #7c3aed
+  );
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+
+  transition: all 0.3s ease;
+
+  box-shadow:
+    0 6px 15px rgba(79, 70, 229, 0.25);
+}
+
+.add-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 22px rgba(79, 70, 229, 0.35);
+}
+
+
+/* =========================================
+   TABLE CARD
+========================================= */
+
+.table-card {
+  width: 100%;
+
+  background: white;
+
+  border-radius: 18px;
+
+  overflow-x: auto;
+
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.07);
+
+  border: 1px solid #e5e7eb;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.table-card table {
+  width: 100%;
+
+  min-width: 1000px;
+
+  border-collapse: collapse;
+}
+
+
+/* =========================================
+   TABLE HEADER
+========================================= */
+
+.table-card th {
+  background: #312e81;
+
+  color: white;
+
+  padding: 16px;
+
+  text-align: center;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================
+   TABLE DATA
+========================================= */
+
+.table-card td {
+  padding: 15px 16px;
+
+  border-bottom: 1px solid #eeeeee;
+
+  color: #374151;
+
+  font-size: 14px;
+
+   text-align: center;
+  white-space: nowrap;
+}
+
+
+/* Row Hover */
+
+.table-card tbody tr {
+  transition: 0.2s ease;
+}
+
+.table-card tbody tr:hover {
+  background: #f8f7ff;
+}
+
+
+/* =========================================
+   STUDENT NAME
+========================================= */
+
+.student-name {
+  font-weight: 600;
+
+  color: #312e81;
+}
+
+
+/* =========================================
+   COURSE BADGE
+========================================= */
+
+.course-badge {
+  display: inline-block;
+
+  background: #ede9fe;
+
+  color: #6d28d9;
+
+  padding: 5px 10px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.actions {
+  white-space: nowrap;
+}
+
+.actions button {
+  border: none;
+
+  padding: 7px 11px;
+
+  border-radius: 6px;
+
+  margin: 2px;
+
+  cursor: pointer;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  transition: all 0.2s ease;
+}
+
+
+/* =========================================
+   VIEW BUTTON
+========================================= */
+
+.view-btn {
+  background: #dbeafe;
+
+  color: #1d4ed8;
+}
+
+.view-btn:hover {
+  background: #bfdbfe;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   EDIT BUTTON
+========================================= */
+
+.edit-btn {
+  background: #fef3c7;
+
+  color: #b45309;
+}
+
+.edit-btn:hover {
+  background: #fde68a;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   DELETE BUTTON
+========================================= */
+
+.delete-btn {
+  background: #fee2e2;
+
+  color: #dc2626;
+}
+
+.delete-btn:hover {
+  background: #fecaca;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 992px) {
+
+  .students-page {
+    padding: 35px 5%;
+  }
+
+  .students-header h1 {
+    font-size: 30px;
+  }
+
+  .students-header p {
+    font-size: 14px;
+  }
+
+  .table-card th {
+    padding: 14px;
+
+    font-size: 13px;
+  }
+
+  .table-card td {
+    padding: 13px 14px;
+
+    font-size: 13px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .students-page {
+    min-height: calc(100vh - 60px);
+
+    padding: 30px 15px;
+  }
+
+
+  /* Header becomes vertical */
+
+  .students-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+  }
+
+  .students-header h1 {
+    font-size: 27px;
+  }
+
+  .students-header p {
+    font-size: 14px;
+  }
+
+
+  /* Full width Add button */
+
+  .students-header > a {
+    width: 100%;
+  }
+
+  .add-btn {
+    width: 100%;
+
+    padding: 13px;
+  }
+
+
+  /* Table scroll */
+
+  .table-card {
+    border-radius: 14px;
+
+    overflow-x: auto;
+
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .table-card table {
+    min-width: 950px;
+  }
+
+  .table-card th {
+    padding: 13px;
+
+    font-size: 12px;
+  }
+
+  .table-card td {
+    padding: 12px 13px;
+
+    font-size: 12px;
+  }
+
+  .actions button {
+    padding: 6px 9px;
+
+    font-size: 11px;
+  }
+
+  .course-badge {
+    font-size: 11px;
+
+    padding: 4px 9px;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .students-page {
+    padding: 25px 10px;
+  }
+
+  .students-header {
+    gap: 12px;
+  }
+
+  .students-header h1 {
+    font-size: 24px;
+  }
+
+  .students-header p {
+    font-size: 13px;
+  }
+
+  .add-btn {
+    padding: 12px;
+
+    font-size: 13px;
+  }
+
+  .table-card {
+    border-radius: 12px;
+  }
+
+  .table-card table {
+    min-width: 900px;
+  }
+
+  .table-card th {
+    padding: 11px;
+
+    font-size: 11px;
+  }
+
+  .table-card td {
+    padding: 11px;
+
+    font-size: 11px;
+  }
+
+  .actions button {
+    padding: 6px 8px;
+
+    font-size: 10px;
+  }
+}

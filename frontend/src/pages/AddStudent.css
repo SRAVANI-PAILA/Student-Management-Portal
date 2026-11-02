@@ -1,0 +1,319 @@
+/* Main Page */
+.add-page {
+  min-height: calc(100vh - 70px);
+  padding: 45px 20px;
+  background: linear-gradient(135deg, #eef2ff, #fdf4ff);
+}
+
+/* Form Container */
+.add-container {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Heading */
+.form-heading {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.form-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+
+  font-size: 32px;
+
+  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.25);
+}
+
+.form-heading h1 {
+  color: #312e81;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.form-heading p {
+  color: #6b7280;
+  font-size: 15px;
+}
+
+
+/* Form */
+.student-form {
+  width: 100%;
+  background: white;
+
+  padding: 35px;
+
+  border-radius: 20px;
+  border: 1px solid #e5e7eb;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Form Group */
+.form-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #374151;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+/* Inputs */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+
+  padding: 12px 14px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 9px;
+
+  outline: none;
+
+  font-size: 15px;
+
+  background: #fafafa;
+
+  transition: all 0.3s ease;
+}
+
+
+/* Focus */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #7c3aed;
+
+  background: white;
+
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.12);
+}
+
+
+/* Placeholder */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #9ca3af;
+}
+
+
+/* Textarea */
+.form-group textarea {
+  min-height: 110px;
+
+  resize: vertical;
+}
+
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+
+  padding: 14px;
+
+  margin-top: 5px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: linear-gradient(
+    135deg,
+    #4f46e5,
+    #7c3aed,
+    #db2777
+  );
+
+  color: white;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+
+  box-shadow: 0 6px 15px rgba(124, 58, 237, 0.25);
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 10px 22px rgba(124, 58, 237, 0.35);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+/* ================================= */
+/* TABLET RESPONSIVE */
+/* ================================= */
+
+@media (max-width: 768px) {
+
+  .add-page {
+    padding: 35px 20px;
+  }
+
+  .add-container {
+    max-width: 600px;
+  }
+
+  .student-form {
+    padding: 30px;
+  }
+
+  .form-heading h1 {
+    font-size: 30px;
+  }
+
+  .form-heading p {
+    font-size: 14px;
+  }
+
+  .form-icon {
+    width: 65px;
+    height: 65px;
+    font-size: 28px;
+  }
+}
+
+
+/* ================================= */
+/* MOBILE RESPONSIVE */
+/* ================================= */
+
+@media (max-width: 600px) {
+
+  .add-page {
+    min-height: calc(100vh - 60px);
+
+    padding: 25px 15px;
+  }
+
+  .add-container {
+    width: 100%;
+  }
+
+  .form-heading {
+    margin-bottom: 20px;
+  }
+
+  .form-icon {
+    width: 60px;
+    height: 60px;
+
+    font-size: 26px;
+  }
+
+  .form-heading h1 {
+    font-size: 26px;
+  }
+
+  .form-heading p {
+    font-size: 14px;
+
+    padding: 0 10px;
+  }
+
+  .student-form {
+    padding: 25px 20px;
+
+    border-radius: 16px;
+  }
+
+  .form-group {
+    margin-bottom: 17px;
+  }
+
+  .form-group label {
+    font-size: 13px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 11px 12px;
+
+    font-size: 14px;
+  }
+
+  .form-group textarea {
+    min-height: 100px;
+  }
+
+  .submit-btn {
+    padding: 13px;
+
+    font-size: 15px;
+  }
+}
+
+
+/* ================================= */
+/* SMALL MOBILE */
+/* ================================= */
+
+@media (max-width: 400px) {
+
+  .add-page {
+    padding: 20px 10px;
+  }
+
+  .student-form {
+    padding: 22px 15px;
+
+    border-radius: 14px;
+  }
+
+  .form-heading h1 {
+    font-size: 24px;
+  }
+
+  .form-heading p {
+    font-size: 13px;
+  }
+
+  .form-icon {
+    width: 55px;
+    height: 55px;
+
+    font-size: 23px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 10px;
+
+    font-size: 13px;
+  }
+
+  .submit-btn {
+    padding: 12px;
+
+    font-size: 14px;
+  }
+}

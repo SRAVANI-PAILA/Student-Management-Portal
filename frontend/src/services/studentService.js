@@ -1,7 +1,7 @@
 
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/students";
+const API_URL = "https://student-management-backend-a7p5.onrender.com/api/students";
 
 // GET - All students
 export const getStudents = () => {
